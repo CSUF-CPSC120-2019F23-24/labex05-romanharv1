@@ -28,7 +28,8 @@ int main()
   f2 *= 0.01;
 
   // TODO#1 add comment describing what's happening
-  std::cout << "\n**comment**" << std::endl;
+  // The gap between the numbers gets bigger as the number gets closer to 0.
+  std::cout << "\nThe gap between the numbers gets bigger as the number gets even closer to 0." << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
 
@@ -36,7 +37,8 @@ int main()
   f2 *= 0.1;
 
   // TODO#2 add comment describing what's happening
-  std::cout << "\n**comment**" << std::endl;
+  // The f2 has underflowed and reached 0 completely while the d2 has enough precision to keep going down.
+  std::cout << "\nThe f2 has underflowed and reached 0 completely while the d2 has enough precision to keep going down." << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
 
@@ -44,7 +46,8 @@ int main()
   float f3 = 3.5E38;
 
   // TODO#3 add comment describing what happened
-  std::cout << "\n**comment**" << std::endl;
+  // Both values have overflowed.
+  std::cout << "\nBoth values have overflowed." << std::endl;
   std::cout << std::setprecision(1);
   std::cout << sizeof(d3) << " bytes, value: " << d3 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f3 << std::endl;
